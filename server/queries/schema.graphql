@@ -1,0 +1,16 @@
+type Character {
+  id: Int!
+  characterName: String
+  actorName: String
+  imageUrl: String
+  bio: String
+}
+
+type Query {
+  characters: [Character]
+}
+
+type Mutation {
+  addBio(id: Int!, bio: String): Character
+}
+
